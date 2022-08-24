@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background-color: black; */
+            margin: 0%;
+            height: 2000px;
+        }
+        #header{
+            text-align: center;
+        }
+        #logo{
+            width: 150px;
+            height: auto;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: cadetblue;
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding: 15px 10px;
+            color: rgb(175, 74, 233);
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #container{
+            text-align: center;
+            padding: 50px 10px;
+        }
+        #about-img{
+            width: 100%;
+        }
+        p{
+            text-align: justify;
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        #link{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="zafytech.png" alt="zafy logo" id="logo">
+    </div>
+    <nav id="menu-bar">
+        <li>Home </li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+    </nav>
+    <div id="container">
+        <h1>About Us</h1>
+        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1934,h_993/https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg" alt="About us" id="about-img">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque veritatis quaerat, beatae libero ipsum aspernatur iusto ab! Saepe libero praesentium rerum magni, itaque laborum quaerat labore quidem dolore fugiat vel, alias numquam eaque repudiandae ut perferendis at voluptatem quod? Praesentium voluptatem illo vero quo aliquam animi molestias rem. Dignissimos veritatis excepturi facere, magnam minus ipsa molestias totam doloremque tempora quod eius praesentium illum porro quas dolorem adipisci fugiat eum cupiditate aliquam, rem deserunt modi provident vero iure! Voluptatibus commodi deleniti possimus culpa vero modi reiciendis quod rem unde praesentium quisquam doloremque rerum, laudantium consectetur ad? Eveniet laboriosam, cupiditate reprehenderit esse sit minima dicta, accusamus nisi eaque ipsa exercitationem ab soluta! Consequuntur, odit eveniet accusantium vero facere fugiat delectus, distinctio praesentium eius ipsum eum laboriosam id quo odio rem! Harum dolorum sequi qui error maiores quia itaque labore architecto quisquam porro reprehenderit nulla fuga inventore nobis mollitia esse accusantium fugiat voluptate unde non molestias tempore ex, ratione reiciendis! Numquam id ducimus quaerat provident nulla voluptas iusto eligendi tempore perferendis. Omnis ut similique alias doloribus? Neque non, aperiam iure debitis quasi omnis consequuntur, error corporis, accusantium sapiente labore doloribus quas! Molestias voluptate illo dignissimos nostrum aperiam, repudiandae, veniam consequatur libero mollitia necessitatibus odio! Nobis aliquam doloremque non. Dolore unde hic molestiae neque minima, nemo aliquid nesciunt libero culpa accusamus vel necessitatibus quis, soluta odio nam beatae aperiam tenetur officiis quia aliquam ut perspiciatis veritatis. Atque suscipit numquam dolores debitis nobis nesciunt odit sint! Incidunt necessitatibus exercitationem architecto cupiditate dolores, enim ipsam at eos alias, recusandae impedit perferendis, odit blanditiis. Id distinctio fugit a voluptatem magnam exercitationem ipsam nam nesciunt totam delectus at, architecto deleniti. Accusantium nemo optio blanditiis, quis corrupti aspernatur? Perferendis voluptatum in dolores non recusandae tenetur autem eligendi ut laboriosam corrupti reiciendis ea facilis deleniti amet, obcaecati praesentium iure rem unde totam voluptates culpa, quae expedita distinctio harum. Molestias recusandae facere doloremque ullam est suscipit error. Magni deserunt ut eius aut in porro doloremque libero ullam veniam! Adipisci est tenetur numquam iste ipsa rem asperiores sapiente aspernatur, expedita voluptate ipsam? Facere vero hic minus quasi molestias mollitia, reprehenderit cupiditate adipisci in! Incidunt dignissimos nostrum, obcaecati maxime ratione aspernatur animi, laboriosam vitae eligendi facere culpa ex eius sequi. Necessitatibus magni molestias, fugit sed nisi sit consectetur corporis assumenda labore ipsum nostrum? Quam quod reprehenderit libero vitae adipisci tempore consequuntur totam veniam quaerat excepturi hic suscipit corporis quidem dicta, expedita modi perspiciatis quibusdam soluta culpa architecto repudiandae nam quae fugit sapiente. Nisi illo harum delectus amet, beatae voluptatem earum, quaerat quod, ea quisquam accusantium unde eius doloremque magnam praesentium molestiae perspiciatis non maxime. Cupiditate recusandae consequuntur maiores sunt adipisci! Ut quae cumque, earum numquam ea asperiores natus excepturi iusto doloribus dolor nisi reiciendis. Dicta dignissimos minima impedit itaque minus veniam quaerat fuga suscipit quae. Obcaecati ea sint deleniti fuga rem et vitae? Rerum quisquam soluta ad ab illo consequatur quos atque eum iure consequuntur voluptas dolores porro nemo veritatis nulla laboriosam nisi debitis officia, facilis ullam dignissimos molestias? Velit asperiores quasi adipisci!</p>
+    </div>
+    <script>
+        window.addEventListener('scroll', function(){
+            let navbar = document.getElementById("menu-bar");
+            if(window.pageYOffset >= 190){
+                navbar.classList.add('sticky');
+            }else{
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>
